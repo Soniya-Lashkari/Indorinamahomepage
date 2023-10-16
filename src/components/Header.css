@@ -1,0 +1,145 @@
+.Header {
+  border-bottom: 1px solid rgba(13, 13, 13, 0.1);
+  background: #f5f5f5;
+  width: 100%;
+  height: 80px;
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.hlogo {
+  padding-left: 10%;
+  padding-top: 15px;
+}
+.hlogo h6 {
+  color: #0d0d0d;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 620;
+  line-height: normal;
+  margin: 0px;
+}
+.hlogo p {
+  color: #0d0d0d;
+  font-family: Poppins;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  margin: 0px;
+}
+.search-container {
+  display: flex;
+  /* Set the width as needed */
+  margin: 0 auto;
+
+  overflow: hidden;
+  border-radius: 9px;
+
+  border: 0.5px solid #adadad;
+  background-color: #f5f5f5;
+}
+
+.search-icon {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.search-icon i {
+  color: #888;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  color: #8c898d;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.hright {
+  display: flex;
+  align-items: center;
+  padding-right: 10%;
+}
+.hright p {
+  color: #0d0d0d;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding-right: 15px;
+}
+.hright img {
+  padding-right: 15px;
+}
+.hright h5 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 6px;
+  border: 0.5px solid rgba(13, 13, 13, 0.12);
+  background: #0d0d0d;
+  padding: 8px 25px;
+}
+@media screen and (max-width: 700px) {
+  .hlogo {
+    padding-left: 5%;
+  }
+  .hlogo h6 {
+    font-size: 20px;
+  }
+  .search-container {
+    width: 70%;
+  }
+  .search-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 655px) {
+  .search-container {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+@media screen and (max-width: 587px) {
+  .search-container {
+    margin-left: 4px;
+  }
+  .hsearch {
+    width: 120px;
+  }
+  .hright {
+    margin-left: 0px;
+  }
+  .hright h5 {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .hright img {
+    display: none;
+  }
+}
+@media screen and (max-width: 380px){
+.hlogo{
+  padding-left: 7px;
+  
+}
+.hlogo h6{
+  font-size: 85%;
+}
+}
