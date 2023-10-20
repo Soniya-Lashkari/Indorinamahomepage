@@ -7,6 +7,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .hlogo {
   padding-left: 10%;
@@ -134,12 +135,19 @@
     display: none;
   }
 }
-@media screen and (max-width: 380px){
-.hlogo{
-  padding-left: 7px;
-  
+@media screen and (max-width: 380px) {
+  .hlogo {
+    padding-left: 7px;
+  }
+  .hlogo h6 {
+    font-size: 85%;
+  }
 }
-.hlogo h6{
-  font-size: 85%;
-}
+@media screen and (max-width: 325px){
+  .hright p {
+    display: none;
+  }
+  .hright {
+   padding-right: 40%;
+  }
 }

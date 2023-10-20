@@ -75,6 +75,7 @@
   align-items: center;
   padding-left: 16%;
 }
+
 @media screen and (max-width: 688px) {
   .onecity img,
   .twocity img,
@@ -82,6 +83,38 @@
   .facity img,
   .ffcity img {
     width: 70%;
+    font-size: 15px;
+  }
+  @media screen and (max-width: 699px) {
+    .ffcity {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 558px) {
+    .onecity p,
+    .twocity p,
+    .thcity p,
+    .facity p,
+    .ffcity p,
+    .all p {
+      font-size: 13px;
+    }
+  }
+  @media screen and (max-width: 358px) {
+    .onecity p,
+    .twocity p,
+    .thcity p,
+    .facity p,
+    .ffcity p {
+      font-size: 10px;
+    }
+    .onecity img,
+    .twocity img,
+    .thcity img,
+    .facity img,
+    .ffcity img {
+      width: 80%;
+    }
   }
   @media screen and (max-width: 578px) {
     .ffcity {
@@ -92,7 +125,7 @@
       margin-left: 5%;
     }
   }
-  @media screen and (max-width: 441px) {
+  @media screen and (max-width: 470px) {
     .facity {
       display: none;
     }
@@ -109,7 +142,7 @@
 .container {
   position: relative;
   width: 100%;
-  height: auto;
+  height: max-content;
   padding-bottom: 38%;
   margin-left: 10%;
   margin-right: 10%;
@@ -260,6 +293,10 @@ label span {
   .main3right img {
     display: none;
   }
+  .main3left {
+    text-align: center;
+    padding-left: 15%;
+  }
 }
 .main3left h1 {
   color: #fff;
@@ -366,9 +403,22 @@ label span {
     width: 60%;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 360px) {
   .container {
-    padding-bottom: 350%;
+    padding-bottom: 250%;
+  }
+}
+@media screen and (max-width: 332px) {
+  .container {
+    padding-bottom: 300%;
+  }
+}
+@media screen and (max-width: 270px) {
+  .container {
+    padding-bottom: 400%;
+  }
+  .sellnow {
+    width: 90%;
   }
 }
 @media screen and(min-width: 970px) {
@@ -380,8 +430,8 @@ label span {
   display: flex;
   align-items: center;
 
-  margin-left: 16%;
-  margin-right: 15%;
+  margin-left: 14%;
+  justify-content: center;
   width: 80%;
   margin-top: 15px;
   flex-wrap: wrap;
@@ -572,6 +622,9 @@ label span {
     width: 400px;
   }
 }
+.slidewrappering:hover {
+  animation-play-state: paused;
+}
 
 .custom-slider {
   position: relative;
@@ -748,7 +801,7 @@ label {
   height: auto;
   flex-shrink: 0;
   margin-left: 10%;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 .semain h5 {
   color: #fff;
@@ -803,7 +856,7 @@ label {
 .slideshow {
   /*overflow: hidden;*/
   height: auto;
-  width: 500px;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   /* border: solid #e9e1ca;*/
@@ -811,7 +864,7 @@ label {
 
 @media only screen and (max-width: 521px) {
   .slideshow {
-    width: 450px;
+    width: 80%;
   }
   .slidee p {
     width: 300px;
@@ -819,18 +872,18 @@ label {
 }
 @media only screen and (max-width: 436px) {
   .slideshow {
-    width: 350px;
+    width: 80%;
     margin: 0px;
   }
   .slidee p {
-    width: 250px;
+    width: 200px;
     height: auto;
   }
   .slidee {
-    width: 350px;
+    width: 80%; /*350px*/
   }
   .slidewrapper {
-    width: calc(350px * 5);
+    width: calc(80% * 5); /*350px*/
     animation-name: ss;
   }
 }
@@ -839,17 +892,17 @@ label {
     margin-left: 0px;
   }
   30% {
-    margin-left: calc(-350px * 1);
+    margin-left: calc(-80% * 1);
   }
 
   50% {
-    margin-left: calc(-350px * 2);
+    margin-left: calc(-80% * 2);
   }
   70% {
-    margin-left: calc(-350px * 3);
+    margin-left: calc(-80% * 3);
   }
   90% {
-    margin-left: calc(-350px * 4);
+    margin-left: calc(-80% * 4);
   }
   100% {
     margin-left: 0px;
@@ -858,8 +911,8 @@ label {
 
 .slidewrapper {
   /* Calculate the total width on the
-    basis of number of slides */
-  width: calc(500px * 5.5);
+    basis of number of slides  500px niche*/
+  width: calc(80% * 5.5);
   display: flex;
   justify-content: space-between;
   /* Specify the animation with the
@@ -869,19 +922,23 @@ label {
   padding-bottom: 50px;
   padding-top: 50px;
 }
-
+.slidewrapper:hover {
+  animation-play-state: paused;
+}
 .slidee {
   float: left;
   height: 430px;
-  width: 400px;
+  /*width: 400px;*/
   margin-right: 30px;
   padding: 20px;
+  padding-right: 24px;
 }
 
 .slidee:hover {
   box-shadow: 0 20px 20px rgba(64, 25, 25, 0.3);
   transform: scale(1.11);
   transition: ease-in 0.5s;
+  animation-delay: 3s;
 }
 @keyframes slides {
   5% {
@@ -889,17 +946,17 @@ label {
   }
 
   30% {
-    margin-left: calc(-500px * 1);
+    margin-left: calc(-80% * 1);
   }
 
   50% {
-    margin-left: calc(-500px * 2);
+    margin-left: calc(-80% * 2);
   }
   70% {
-    margin-left: calc(-500px * 3);
+    margin-left: calc(-80% * 3);
   }
   90% {
-    margin-left: calc(-500px * 4);
+    margin-left: calc(-80% * 4);
   }
   100% {
     margin-left: 0px;
@@ -1240,6 +1297,9 @@ label {
     font-weight: 700px;
     font-size: 18px;
   }
+  .link p {
+    margin-left: 10px;
+  }
   .offer {
     padding-top: 20px;
   }
@@ -1252,5 +1312,11 @@ label {
   }
   .social p {
     font-size: 19px;
+  }
+}
+@media only screen and (max-width: 437px) {
+  .social {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
