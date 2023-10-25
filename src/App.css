@@ -220,7 +220,11 @@ label span {
   background-color: rgba(219, 214, 214, 0.6);
   transition: 0.4s;
 }
-
+.i img {
+  border-radius: 40px;
+  border-color: #000;
+  width: 45px;
+}
 #nav_slide .dots:hover {
   cursor: pointer;
   background-color: rgba(231, 132, 132, 0.9);
@@ -376,10 +380,6 @@ label span {
     font-size: 50pt;
   }
 
-  .prev,
-  .next {
-    width: 10%;
-  }
   #nav_slide .dots {
     width: 12px;
     height: 12px;
@@ -551,7 +551,7 @@ label span {
   height: 220px;
   width: 500px;
   text-align: center;
-  padding: 30px;
+  padding: 5px;
 }
 
 .slideeing img {

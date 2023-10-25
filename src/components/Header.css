@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  margin-right: 7%;
 }
 .hlogo {
   padding-left: 10%;
@@ -143,11 +144,11 @@
     font-size: 85%;
   }
 }
-@media screen and (max-width: 325px){
+@media screen and (max-width: 325px) {
   .hright p {
     display: none;
   }
   .hright {
-   padding-right: 40%;
+    padding-right: 40%;
   }
 }

@@ -46,6 +46,9 @@ import image43 from "./image/image 103.png";
 import image44 from "./image/location-svgrepo-com (1) 1.png";
 import image45 from "./image/call-192-svgrepo-com 1.png";
 import image46 from "./image/email-svgrepo-com 1.png";
+import image47 from "./image/Rectangle 40193.png";
+import image48 from "./image/Arrow - Left.png";
+import image49 from "./image/Arrow - Left (1).png";
 export const main = () => {
   return (
     <div className="full">
@@ -105,10 +108,15 @@ export const main = () => {
           </div>
 
           <label className="prev" htmlFor="i5">
-            <span>&#x2039;</span>
+            <span className="i">
+              {" "}
+              <img src={image48} />
+            </span>
           </label>
           <label className="next" htmlFor="i2">
-            <span>&#x203a;</span>
+            <span className="i">
+              <img src={image49} />
+            </span>
           </label>
         </div>
 
@@ -131,10 +139,14 @@ export const main = () => {
             </div>
           </div>
           <label className="prev" htmlFor="i1">
-            <span>&#x2039;</span>
+            <span className="i">
+              <img src={image48} />
+            </span>
           </label>
           <label className="next" htmlFor="i3">
-            <span>&#x203a;</span>
+            <span className="i">
+              <img src={image49} />
+            </span>
           </label>
         </div>
 
@@ -157,10 +169,14 @@ export const main = () => {
             </div>
           </div>
           <label className="prev" htmlFor="i2">
-            <span>&#x2039;</span>
+            <span className="i">
+              <img src={image48} />
+            </span>
           </label>
           <label className="next" htmlFor="i4">
-            <span>&#x203a;</span>
+            <span className="i">
+              <img src={image49} />
+            </span>
           </label>
         </div>
 
@@ -184,10 +200,14 @@ export const main = () => {
           </div>
 
           <label className="prev" htmlFor="i3">
-            <span>&#x2039;</span>
+            <span className="i">
+              <img src={image48} />
+            </span>
           </label>
           <label className="next" htmlFor="i5">
-            <span>&#x203a;</span>
+            <span className="i">
+              <img src={image49} />
+            </span>
           </label>
         </div>
 
@@ -211,10 +231,14 @@ export const main = () => {
           </div>
 
           <label className="prev" htmlFor="i4">
-            <span>&#x2039;</span>
+            <span className="i">
+              <img src={image48} />
+            </span>
           </label>
           <label className="next" htmlFor="i1">
-            <span>&#x203a;</span>
+            <span className="i">
+              <img src={image49} />
+            </span>
           </label>
         </div>
 
@@ -256,7 +280,10 @@ export const main = () => {
 
       <div className="fifthmain">
         <div className="heading">
-          <h5>Trendings Offers</h5>
+          <h5>
+            {" "}
+            <img src={image47} /> Trendings Offers
+          </h5>
         </div>
         <div className="eight">
           <div className="slideshowing">
@@ -345,7 +372,8 @@ export const main = () => {
       </div>
       <div className="sixthmain">
         <h3>
-          Our Latest <span className="diff"> Awards</span>
+          <img src={image47} />
+          {""} Our Latest <span className="diff"> Awards</span>
         </h3>
         <div className="rewards">
           <img src={image20} />
@@ -367,7 +395,9 @@ export const main = () => {
         </div>
       </div>
       <div className="ourclient">
-        <h1>What Our Clients Say</h1>
+        <h1>
+          <img src={image47} /> What Our Clients Say
+        </h1>
       </div>
       <div className="eight">
         <div className="slideshow">
@@ -532,7 +562,9 @@ export const main = () => {
         </div>
       </div>
       <div className="ninemain">
-        <h2>Your Perfect Advertising Partner</h2>
+        <h2>
+          <img src={image47} /> Your Perfect Advertising Partner
+        </h2>
         <p>
           Excellent Publicity is forever expanding your brand with high quality
           service that combines creativity with value pricing. We enjoy <br />{" "}
@@ -555,9 +587,11 @@ export const main = () => {
         </div>
       </div>
       <div className="tenmain">
-        <h5>Our Venture</h5>
+        <h5>
+          <img src={image47} /> Our Venture
+        </h5>
         <div className="tenimg">
-        <img src={image43} />
+          <img src={image43} />
           <img src={image34} />
           <img src={image35} />
           <img src={image36} />
@@ -607,15 +641,21 @@ export const main = () => {
         </div>
         <div className="contact">
           <h5>Contact us</h5>
-          
-           <p>
-           <img src={image44} /> 124 Brooklyn, New York
+
+          <p>
+            <img src={image44} /> 124 Brooklyn, New York
             <br /> {"  "}United States
           </p>
           <br />
-          <p><img src={image45} />+11 2 3456 7890</p>
+          <p>
+            <img src={image45} />
+            +11 2 3456 7890
+          </p>
           <br />
-          <p><img src={image46} />info@houzing.com</p>
+          <p>
+            <img src={image46} />
+            info@houzing.com
+          </p>
         </div>
       </div>
     </div>
